@@ -16,7 +16,7 @@
 		function escreverDados(){
 			echo "Nome: ".$this->nome.'<br>';
 			echo "Ano de Nascimento: ".$this->anoNascimento.'<br>';
-			echo "Endereço: ".$this->endereco.'<br>';
+			echo "EndereÃ§o: ".$this->endereco.'<br>';
 			echo "Telefone: ".$this->telefone.'<br>';
 		}
 		

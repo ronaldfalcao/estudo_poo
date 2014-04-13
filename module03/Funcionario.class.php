@@ -18,13 +18,13 @@
 		}
 		
 		function escreverSalario(){
-			echo "Salário: ".$this->salario.'<br>';
+			echo "SalÃ¡rio: ".$this->salario.'<br>';
 		}
 		
 		function escreverDados(){
 			parent::escreverDados();
 			
-			echo "Salário: ".$this->salario.'<br>';
+			echo "SalÃ¡rio: ".$this->salario.'<br>';
 			echo "Cargo: ".$this->cargo.'<br>';
 			echo "Dia do Pagamento: ".$this->diaPagamento.'<br>';
 		}
