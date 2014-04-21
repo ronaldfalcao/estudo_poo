@@ -23,7 +23,7 @@ and open the template in the editor.
             $pessoaNova->nascimento = "12/03/1922";
             $pessoaNova->salario = "U$1890,00";
             
-            //Para mostrar os dados da nova pessoa ($pessoaNova) chamamos o mÃ©todo...
+            //Para mostrar os dados da nova pessoa ($pessoaNova) chamamos o método...
             $pessoaNova->mostraPessoa();
                                 
             //Instanciando o objeto com o uso de construtor...
@@ -31,13 +31,13 @@ and open the template in the editor.
             $novaConta->ObterSaldo();
 
             //mostrar saldo atual da conta...
-            echo "Saldo atual Ã© (R$): ".$novaConta->ObterSaldo().'<br>';
+            echo "Saldo atual é (R$): ".$novaConta->ObterSaldo().'<br>';
             echo "Depositando R$ 500,00 em sua conta...".'<br>';
             $novaConta->DepositarValor(500);
-            echo "Saldo atual Ã© (R$): ".$novaConta->ObterSaldo().'<br>';
+            echo "Saldo atual é (R$): ".$novaConta->ObterSaldo().'<br>';
             echo "Sacando R$ 1200,00 de sua conta...".'<br>';
             $novaConta->SacarValor(1200);
-            echo "Saldo atual Ã© (R$): ".$novaConta->ObterSaldo().'<br>';
+            echo "Saldo atual é (R$): ".$novaConta->ObterSaldo().'<br>';
             
             
         ?>

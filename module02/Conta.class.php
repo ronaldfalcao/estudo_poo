@@ -12,12 +12,14 @@
  * @author ronaldbf
  */
 class Conta {
+	
     public $cliente;
     public $agencia;
     public $conta;
     public $saldo;
     public $status;
     
+    //Declarando um mÈtodo construtor com a passagem das propriedades por par‚metros...
     function __construct($Cliente, $Agencia, $Conta, $Saldo, $Status) {
         $this->cliente = $Cliente;
         $this->agencia = $Agencia;
@@ -26,19 +28,20 @@ class Conta {
         $this->status = $Status;
     }
     
+    //MÈtodo destrutor da classe...
     function __destruct() {
         echo 'O objeto foi destru√≠do'.'<br>';
         
     }
     
-    //M√©todo para saque...
+    //MÈtodo para saque...
     function SacarValor($QuantiaDebitada){
         if( $QuantiaDebitada > 0 ){
             $this->saldo -= $QuantiaDebitada;
         }
     }
     
-    //M√©todo para dep√≥sito
+    //MÈtodo para depÛsito
     function DepositarValor($QuantiaDepositada) {
         if ( $QuantiaDepositada > 0){
             $this->saldo += $QuantiaDepositada;
@@ -46,13 +49,13 @@ class Conta {
         
     }
     
-    //M√©todo para verificar o saldo...
+    //MÈtodo para verificar o saldo...
     function ObterSaldo() {
         if ($this->status == "ATIVA"){
             return $this->saldo;
         }
         else{
-            return "A conta est√° desativada. Procure o seu gerente.".'<br>';
+            return "A conta est· desativada. Procure o seu gerente.".'<br>';
         }
     }
     

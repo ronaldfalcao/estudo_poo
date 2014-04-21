@@ -14,33 +14,33 @@ and open the template in the editor.
             
             require_once 'Pessoa.class.php';
             
-            echo '<h2>'."Testando mÃ©todos interceptores".'</h2>';
+            echo '<h2>'."Testando métodos interceptores".'</h2>';
             
             $pessoa = new Pessoa();
             
-            //Acessando a variÃ¡vel pelo mÃ©todo set()...
+            //Acessando a variável pelo método set()...
             $pessoa->setDataNascimento(34);
-            echo "<br>"."Valor atribuÃ­do pelo get(): ".$pessoa->getDataNascimento().'<br>';
+            echo "<br>"."Valor atribuí­do pelo get(): ".$pessoa->getDataNascimento().'<br>';
             
-            //Acessando a variÃ¡vel diretamente, serÃ¡ interceptada pelo mÃ©todo __set()...
+            //Acessando a variável diretamente, será interceptada pelo método __set()...
             $pessoa->dataNascimento = 40;
             $pessoa->dataNascimento = 0;
             $pessoa->dataNascimento = "AA";
             
             echo '<br>';
             
-            //Tentando exibir variÃ¡veis diretamente, serÃ¡ interceptada pelo mÃ©todo __get()..
+            //Tentando exibir variáveis diretamente, será interceptada pelo método __get()..
             echo $pessoa->nome;
             echo $pessoa->dataNascimento;
             
             echo '<br>';
            
-            //Tentando acessar um mÃ©todo que nÃ£o existe...
+            //Tentando acessar um método que não existe...
             $pessoa->calculaIdade();
             
              echo '<br>';
             
-            //Tentando acessar um mÃ©todo que nÃ£o existe...
+            //Tentando acessar um método que não existe...
             $pessoa->calculaIdade(1,2,3,4,5);
         ?>
     </body>

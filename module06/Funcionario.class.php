@@ -2,12 +2,12 @@
     
     class Funcionario{
         
-        //Propriedades privadas que n√£o s√£o acessadas fora da classe
+        //Propriedades privadas que n„o s„o acessadas fora da classe...
         private $id;
         private $nome;
         private $nascimento;
         
-        //Propriedades protegidas que s√£o acessadas de fora pelas classes filhas
+        //Propriedades protegidas que s„o acessadas de fora pelas classes filhas...
         protected $salario;
         
         public function getSalario() {

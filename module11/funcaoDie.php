@@ -7,6 +7,7 @@
 		teste();
 	}
 	else{
+	    //Interrompe a execução do script...
 		die ("Ocorreu um erro durante a execução da função Teste().");
 	}
 	

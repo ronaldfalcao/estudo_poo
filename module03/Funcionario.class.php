@@ -23,14 +23,14 @@
 		
 		//Função que retorna o salário do funcionário...
 		function escreverSalario(){
-			echo "SalÃ¡rio: ".$this->salario.'<br>';
+			echo "Salário: ".$this->salario.'<br>';
 		}
 		
 		//Função que retorna os dados da classe, estende a classe Pessoa e só completa com os dados faltantes...
 		function escreverDados(){
 			parent::escreverDados();
 			
-			echo "SalÃ¡rio: ".$this->salario.'<br>';
+			echo "Salário: ".$this->salario.'<br>';
 			echo "Cargo: ".$this->cargo.'<br>';
 			echo "Dia do Pagamento: ".$this->diaPagamento.'<br>';
 		}

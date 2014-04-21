@@ -11,8 +11,8 @@
                 return "Latido";
         }
         
-        //O m√©todo n√£o pode ser estendido. Usado apenas de exemplo,
-        //pois a classe tamb√©m √© final.
+        //O mÈtodo n„o pode ser estendido. Usado apenas de exemplo,
+        //pois a classe tambÈm È final.
         final public function descricao(){
             return parent::descricao(). "Eu sou um cachorro";
         }

@@ -2,11 +2,11 @@
 
 class Fornecedor {
 
-    //Propriedades pÃºblicas acessÃ­veis fora da classe.
+    //Propriedades públicas acessíveis fora da classe.
     public $valor;    
     public $nome;
     
-    //Propriedades privadas acessÃ­veis apenas dentro da classe.
+    //Propriedades privadas acessíveis apenas dentro da classe.
     private $compra;
     private $id;
     

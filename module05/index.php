@@ -7,7 +7,7 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Testando Classes/MÃ©todos abstrados e finais</title>
+        <title>Testando Classes/Métodos abstrados e finais</title>
     </head>
     <body>
         <?php

@@ -7,7 +7,7 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Testando relaÃ§Ãµes entre classes: AssociaÃ§Ã£o, AgregaÃ§Ã£o e ComposiÃ§Ã£o</title>
+        <title>Testando relações entre classes: Associação, Agregação e Composição</title>
     </head>
     <body>
         <?php
@@ -17,17 +17,17 @@ and open the template in the editor.
             require_once 'Carrinho.class.php';
             require_once 'Cliente.class.php';
             
-            echo '<h2>'."Exemplo usando AssociaÃ§Ã£o".'</h2>';
+            echo '<h2>'."Exemplo usando Associação".'</h2>';
             
             $fornecedor = new Fornecedor(1, "Fornecedor SA", "Rua do Fornecedor, 33232", "+55 21 7463-9875");
             $produto = new Produto(1, "Produtis", 1.25, $fornecedor);
             
-            echo "DescriÃ§Ã£o do Produto".'<br>';
+            echo "Descrição do Produto".'<br>';
             echo "Nome do produto: ".$produto->nome.'<br>';
-            echo "Valor unitÃ¡rio: ".$produto->valor.'<br>';
+            echo "Valor unitário: ".$produto->valor.'<br>';
             echo "Nome do produto: ".$produto->fornecedor->razaoSocial.'<br>';
             
-            echo '<h2>'."Exemplo usando AgregaÃ§Ã£o".'</h2>';
+            echo '<h2>'."Exemplo usando Agregação".'</h2>';
             
             $produto01 = new Produto(2, "Alface", 0.85, $fornecedor);
             $produto02 = new Produto(3, "Repolho", 3.75, $fornecedor);
@@ -52,14 +52,14 @@ and open the template in the editor.
             echo "--------------------------------------".'<br>';
             $carrinhoCompra->calculaTotal();
             
-            echo '<h2>'."Exemplo usando ComposiÃ§Ã£o".'</h2>';
+            echo '<h2>'."Exemplo usando Composição".'</h2>';
             $ronald = new Cliente();
             $ronald->codigo = 1;
-            $ronald->setContato("Ronald B. FalcÃ£o", "contato@ronaldfalcao.com.br", "+55 11 6546-0098");
+            $ronald->setContato("Ronald B. Falcão", "contato@ronaldfalcao.com.br", "+55 11 6546-0098");
             $ronald->endereco = "Rua dos Desenvolvedores PHP, 003";
             
             $ronald->escreveContato();
-            echo 'EndereÃ§o: '.$ronald->endereco;
+            echo 'Endereço: '.$ronald->endereco;
         ?>
     </body>
 </html>

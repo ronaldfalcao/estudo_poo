@@ -1,4 +1,6 @@
 <?php
+    
+    //Incluíndo as bibliotecas...
 	include_once 'Classe1.class.php';
 	include_once 'Classe2.class.php';
 	include_once 'Classe3.class.php';

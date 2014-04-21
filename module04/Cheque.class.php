@@ -1,7 +1,7 @@
 <?php
 
     /*Classe base para entender o conceito de polimorfismo
-     * dela ser√° estendida a classe Cheque Especial      
+     * dela ser· estendida a classe Cheque Especial      
      */
     class Cheque{
         
@@ -11,12 +11,12 @@
             $this->valor = $Valor;
         }
         
-        //Fun√ß√£o calcularJuros() que ser√° sobrescrita na classe filha.
+        //FunÁ„o calcularJuros() que ser· sobrescrita na classe filha.
         function calcularJuros(){
             return $this->valor * 1.20;
         }
         
-        //Fun√ß√£o tipoCheque() que ser√° sobrescrita na classe filha.
+        //FunÁ„o tipoCheque() que ser· sobrescrita na classe filha.
         function tipoCheque() {
             return "Comum";
         }

@@ -17,13 +17,13 @@ and open the template in the editor.
             
             $fornecedor = new Fornecedor();
             
-            //Atribuindo valor Ã s propriedades pÃºblicas.
+            //Atribuindo valor às propriedades públicas.
             $fornecedor->nome = "Nome do fornecedor";
             $fornecedor->valor = 10000.00;
             
             echo 'Exibindo as propriedades das classes<br>';
             echo "==========================================".'<br>';
-            echo "Propriedades PÃºblicas".'<br>';
+            echo "Propriedades Públicas".'<br>';
             echo "=====================".'<br>';
             echo "Nome: ".$fornecedor->nome.'<br>';
             echo "Valor da compra: R$ ".$fornecedor->valor.'<br>';
@@ -32,7 +32,7 @@ and open the template in the editor.
             $fornecedor->setCompra(10);
             $fornecedor->setId(1);
              
-            //Exibindo as variÃ¡veis privadas com as funÃ§Ãµes get.
+            //Exibindo as variáveis privadas com as funções get.
             echo "==========================================".'<br>';
             echo "Propriedades Privadas".'<br>';
             echo "=====================".'<br>';
@@ -46,7 +46,7 @@ and open the template in the editor.
             
             $junior->setSalario(300);
             
-            echo "O salÃ¡rio do estagiÃ¡rio Ã©: ".$junior->getSalario();
+            echo "O salário do estagiário Ã©: ".$junior->getSalario();
         ?>
     </body>
 </html>

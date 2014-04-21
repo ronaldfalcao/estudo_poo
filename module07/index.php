@@ -7,7 +7,7 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Testando Constantes e propriedades/m√©todos est√°ticos</title>
+        <title>Testando Constantes e propriedades/mÈtodos est·ticos</title>
     </head>
     <body>
         <?php
@@ -18,7 +18,7 @@ and open the template in the editor.
             
             $aplicacaoMath = new Aplicacao("MAS - Math Application System");
             
-            echo '<br>'.'Testando propriedades e m√©todos est√°ticos'.'<br>';
+            echo '<br>'.'Testando propriedades e mÈtodos est·ticos'.'<br>';
             echo '==========================================='.'<br>';
             
             Estatico::$propriedadeEstatica = 20;
@@ -27,8 +27,7 @@ and open the template in the editor.
             echo '<br>';
             
             EstaticoEstendido::mensagemFilhaEstatico();
-            
-            
+                        
         ?>
     </body>
 </html>

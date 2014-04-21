@@ -1,5 +1,6 @@
 <?php
 	
+    // Criando a classe de teste
 	require_once 'Classe1.class.php';
 	
 	class ClasseA extends Classe1{

@@ -13,11 +13,13 @@
  */
 class Pessoa {
     
+	//Declarando as propriedades...
     public $nome;
     public $nascimento;
     public $altura;
     public $salario;
     
+    //Método para exibir os valores das propriedades do objeto...
     public function mostraPessoa() {
         
         echo "Nome: ".$this->nome.'<br>';

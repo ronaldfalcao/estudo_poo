@@ -1,6 +1,6 @@
 <?php
 
-    /* Criando uma classe abstrata, que nÃ£o poderÃ¡ ser instanciada
+    /* Criando uma classe abstrata, que não poderá ser instanciada
      * diretamente, apenas estendida.
      */
     abstract class Animal{
@@ -17,7 +17,7 @@
             return $this->nome." , ".$this->idade." ano(s) de idade.".'<br>';
         }
         
-        //Necessariamente a classe filha tem que possuir esse mÃ©todo.
+        //Necessariamente a classe filha tem que possuir esse método.
         abstract public function falar();
         
     }

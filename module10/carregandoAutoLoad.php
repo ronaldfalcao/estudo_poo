@@ -1,12 +1,15 @@
 <?php
 	
+    /* Criando a função __autoload() para que as classes da pasta raiz sejam carregadas...
+     * 
+     */
 	function __autoload($classe){
 		
 		$dir = $classe.".class.php";
  
 	   	//confirmando se o arquivo existe	 
 	   	if (file_exists($dir)){
-	   	//se exister, faz a inclusão
+	   	    //se exister, faz a inclusão
 	    	require_once($dir);
 	   	}
 	} 

@@ -17,11 +17,13 @@ and open the template in the editor.
             //instanciando um objeto da classe Carro...
             $carroNovo = new Carro();
             
+            //Atribuindo valores às propriedades do objeto $carroNovo...
             $carroNovo->ano = 2014;
             $carroNovo->cor = "Prata M335";
             $carroNovo->fabricante = "Volkswagen";
             $carroNovo->modelo = "Gol";
             
+            //Exibindo os valores das propriedades do objeto $carroNovo...
             echo "Novo carro no sistema".'<br>';
             echo "Ano: ".$carroNovo->ano.'<br>';
             echo "Fabricante: ".$carroNovo->fabricante.'<br>';

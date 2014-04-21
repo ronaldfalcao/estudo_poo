@@ -5,9 +5,7 @@
         private $dataNascimento;
         private $nome;
         
-        
-        
-        //Usado para acessar a propriedade $idade por um mÃ©todo...
+        //Usado para acessar a propriedade $idade por um método...
         public function setDataNascimento($DataNascimento) {
             $this->dataNascimento = $DataNascimento;
             return $this;
@@ -17,17 +15,16 @@
             return $this->dataNascimento;
         }
 
-        
         //Vai interceptar a tentativa fora da classe te atribuir um valor para a
         //propriedade $idade...
         public function __set($name, $value) {
             if ( $name == "dataNascimento"){
                 if (is_integer($value) && strlen($value) > 1){
                     $this->setDataNascimento($value);
-                    echo "Valor __set: ".$value." atribuÃ­do Ã  propriedade ".$name.'<br>';
+                    echo "Valor __set: ".$value." atribuído à propriedade ".$name.'<br>';
                 }
                 else{
-                    echo "Valor __set: ".$value." nÃ£o atribuÃ­do Ã  propriedade ".$name.'<br>';
+                    echo "Valor __set: ".$value." não atribuído à propriedade ".$name.'<br>';
                 }
             }
             
@@ -35,26 +32,24 @@
         
         public function __get($name) {
             if( $name == "dataNascimento" || $name == "nome"){
-                echo "VocÃª estÃ¡ tentando acessar propriedades privadas.".'<br>';
+                echo "Você está tentando acessar propriedades privadas.".'<br>';
             }
         }
         
         public function __call($name, $arguments) {
-            echo 'O seguinte mÃ©todo foi executado: '.$name.'<br>';
+            echo 'O seguinte método foi executado: '.$name.'<br>';
             
             if (count($arguments) != 0){
-                echo "Foram utilizados os seguintes argumento: ".'<br>';
+                echo "Foram utilizados os seguintes argumentos: ".'<br>';
                 foreach ($arguments as $key => $value) {
-                    echo "Argumento: ".$value.'<br>';
+                    echo "Argumentos: ".$value.'<br>';
                     
                 }
             }
             else{
-                echo "NÃ£o foram fornecidos arqgumentos.".'<br>';
+                echo "Não foram fornecidos arqgumentos.".'<br>';
             }
         }
-        
-        
         
     }
 
